@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import dotenv from 'dotenv';
+import { pathToFileURL } from 'url';
 
 dotenv.config();
 
@@ -10,7 +11,7 @@ const LOG_FILE = path.join(DATA_DIR, 'weather_log.csv');
 
 
 if(!fs.existsSync(DATA_DIR)) {
-    fs.mkdir(DATA_DIR);
+    fs.mkdirSync(DATA_DIR);
 }
 
 export async function fetchWeather() {
@@ -48,6 +49,11 @@ export async function fetchWeather() {
      
 } 
 
-if(import.meta.url === `file://${process.argv[1]}`) {
+console.log(import.meta.url);
+console.log()
+console.log(`file://${process.argv[1]}`);
+
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+    console.log("this is running");
     fetchWeather();
 }
