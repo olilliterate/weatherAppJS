@@ -49,9 +49,6 @@ export async function fetchWeather() {
      
 } 
 
-console.log(import.meta.url);
-console.log()
-console.log(`file://${process.argv[1]}`);
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {
     console.log("this is running");
