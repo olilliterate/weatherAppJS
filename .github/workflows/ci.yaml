@@ -27,7 +27,7 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: Test app
-        run: npm run test
+        run: npm run auto-test
       - name: Fetch Latest Weather
         env: 
           WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
