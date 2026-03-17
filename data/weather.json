@@ -31,7 +31,7 @@
   "clouds": {
     "all": 1
   },
-  "dt": 1773758984,
+  "dt": 1773759606,
   "sys": {
     "country": "GB",
     "sunrise": 1773728563,
@@ -41,5 +41,5 @@
   "id": 2653822,
   "name": "Cardiff",
   "cod": 200,
-  "_last_updated_utc": "2026-03-17T14:49:44.498Z"
+  "_last_updated_utc": "2026-03-17T15:00:06.770Z"
 }
