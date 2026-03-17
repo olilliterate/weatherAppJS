@@ -23,7 +23,6 @@ export async function fetchWeather() {
        if(!response.ok){
         throw new Error(`HTTP error! Status ${response.status}`);
        }
-       console.log(typeof(response));
        const data = await response.json();
        const nowUTC = new Date().toISOString();
        data._last_updated_utc = nowUTC;
@@ -51,6 +50,5 @@ export async function fetchWeather() {
 
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {
-    console.log("this is running");
     fetchWeather();
 }
