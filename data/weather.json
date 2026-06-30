@@ -5,33 +5,36 @@
   },
   "weather": [
     {
-      "id": 803,
-      "main": "Clouds",
-      "description": "broken clouds",
-      "icon": "04d"
+      "id": 500,
+      "main": "Rain",
+      "description": "light rain",
+      "icon": "10d"
     }
   ],
   "base": "stations",
   "main": {
-    "temp": 18.04,
-    "feels_like": 18.22,
-    "temp_min": 16.98,
-    "temp_max": 18.98,
-    "pressure": 1021,
-    "humidity": 89,
-    "sea_level": 1021,
-    "grnd_level": 1016
+    "temp": 17.11,
+    "feels_like": 17.28,
+    "temp_min": 16.83,
+    "temp_max": 18.6,
+    "pressure": 1020,
+    "humidity": 92,
+    "sea_level": 1020,
+    "grnd_level": 1015
   },
   "visibility": 10000,
   "wind": {
-    "speed": 6.55,
-    "deg": 266,
-    "gust": 7.88
+    "speed": 6.9,
+    "deg": 254,
+    "gust": 8.52
+  },
+  "rain": {
+    "1h": 0.2
   },
   "clouds": {
-    "all": 54
+    "all": 48
   },
-  "dt": 1782827697,
+  "dt": 1782836146,
   "sys": {
     "type": 2,
     "id": 2084271,
@@ -43,5 +46,5 @@
   "id": 2653822,
   "name": "Cardiff",
   "cod": 200,
-  "_last_updated_utc": "2026-06-30T13:54:57.474Z"
+  "_last_updated_utc": "2026-06-30T16:15:46.647Z"
 }
